@@ -73,8 +73,7 @@ export default createWidget("poster-name", {
   html(attrs) {
     // const username = attrs.username;
     // const name = attrs.name;
-    const nnames = ["nonnie", "nonny", "bonnie", "pony", "seal", "velociraptor"]
-    const username = nnames[Math.floor(Math.random() * nnames.length)];
+    const username = "nonnie";
     const name = "Nonnie";
     const nameFirst =
       this.siteSettings.display_name_on_posts && prioritizeNameInUx(name);
