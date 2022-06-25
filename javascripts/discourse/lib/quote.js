@@ -9,7 +9,8 @@ export function buildQuote(post, contents, opts = {}) {
     return "";
   }
 
-  let fullName = post.name;
+  let fullName = "nonnie";
+  // let fullName = post.name;
   // if the quote username data attr is present but it does not
   // match the post username then fallback to the quote username instead of fetching
   // the full name from the post
