@@ -18,7 +18,8 @@ export function buildQuote(post, contents, opts = {}) {
     fullName = null;
   }
 
-  const name = prioritizeNameFallback(fullName, opts.username || post.username);
+  const name = "nonnie";
+  // const name = prioritizeNameFallback(fullName, opts.username || post.username);
 
   const params = [
     `nonnie`,
