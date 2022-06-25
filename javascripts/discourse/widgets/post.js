@@ -179,7 +179,6 @@ createWidget("post-avatar-user-info", {
 createWidget("post-avatar", {
   tagName: "div.topic-avatar",
 
-  // default is true
   settings: {
     size: "large",
     displayPosterName: false,
@@ -280,8 +279,9 @@ createWidget("post-meta-data", {
     };
   },
 
+  // default is true
   settings: {
-    displayPosterName: false,
+    displayPosterName: true,
   },
 
   html(attrs) {
