@@ -73,8 +73,8 @@ export function avatarImg(wanted, attrs) {
 
 export function avatarFor(wanted, attrs, linkAttrs) {
   const attributes = {
-    href: attrs.url,
-    "data-user-card": attrs.username,
+    // href: attrs.url,
+    // "data-user-card": attrs.username,
     "aria-hidden": true,
   };
   if (linkAttrs) {
