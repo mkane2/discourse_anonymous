@@ -179,6 +179,7 @@ createWidget("post-avatar-user-info", {
 createWidget("post-avatar", {
   tagName: "div.topic-avatar",
 
+  // default is true
   settings: {
     size: "large",
     displayPosterName: false,
@@ -737,7 +738,7 @@ createWidget("post-article", {
 
     rows.push(
       h("div.row", [
-        this.attach("post-avatar", attrs),
+        // this.attach("post-avatar", attrs),
         this.attach("post-body", attrs),
       ])
     );
