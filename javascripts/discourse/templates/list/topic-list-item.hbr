@@ -47,6 +47,7 @@
   {{/if}}
 </td>
 
+<td class='posters topic-list-data'>BORK BORK BORK</td>
 {{!-- {{#if showPosters}}
   {{raw "list/posters-column" posters=topic.featuredUsers}}
 {{/if}} --}}
