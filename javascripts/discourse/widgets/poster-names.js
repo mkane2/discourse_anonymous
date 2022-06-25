@@ -35,8 +35,8 @@ createWidget("poster-name-title", {
 });
 
 export default createWidget("poster-name", {
-  tagName: "div.names.trigger-user-card",
-
+  // tagName: "div.names.trigger-user-card",
+  tagName: "div.names",
   settings: {
     showNameAndGroup: true,
     showGlyph: true,

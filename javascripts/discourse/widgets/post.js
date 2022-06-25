@@ -83,7 +83,8 @@ export function avatarFor(wanted, attrs, linkAttrs) {
   return h(
     "a",
     {
-      className: `trigger-user-card ${attrs.className || ""}`,
+      // className: `trigger-user-card ${attrs.className || ""}`,
+      className: `${attrs.className || ""}`,
       attributes,
     },
     avatarImg(wanted, attrs)
