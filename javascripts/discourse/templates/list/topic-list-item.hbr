@@ -47,9 +47,9 @@
   {{/if}}
 </td>
 
-{{!-- {{#if showPosters}}
+{{#if showPosters}}
   {{raw "list/posters-column" posters=topic.featuredUsers}}
-{{/if}} --}}
+{{/if}}
 
 {{raw "list/posts-count-column" topic=topic}}
 
