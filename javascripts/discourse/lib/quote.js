@@ -15,7 +15,8 @@ export function buildQuote(post, contents, opts = {}) {
   // match the post username then fallback to the quote username instead of fetching
   // the full name from the post
   if (opts.username && opts.username !== post.username) {
-    fullName = null;
+    // fullName = null;
+    fullName = "nonnie";
   }
 
   const name = "nonnie";
@@ -33,7 +34,8 @@ export function buildQuote(post, contents, opts = {}) {
   if (
     helperContext().siteSettings.display_name_on_posts &&
     !helperContext().siteSettings.prioritize_username_in_ux &&
-    fullName
+    // fullName
+    name
   ) {
     // params.push(`username:${opts.username || post.username}`);
     params.push(`username:${name}`);
