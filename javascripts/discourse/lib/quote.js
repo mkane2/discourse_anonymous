@@ -22,8 +22,7 @@ export function buildQuote(post, contents, opts = {}) {
   // const name = prioritizeNameFallback(fullName, opts.username || post.username);
 
   const params = [
-    `nonnie`,
-    // name,
+    name,
     `post:${opts.post || post.post_number}`,
     `topic:${opts.topic || post.topic_id}`,
   ];
@@ -37,7 +36,7 @@ export function buildQuote(post, contents, opts = {}) {
     fullName
   ) {
     // params.push(`username:${opts.username || post.username}`);
-    params.push(`username:nonnie`);
+    params.push(`username:${name}`);
   }
 
   return `[quote="${params.join(", ")}"]\n${contents.trim()}\n[/quote]\n\n`;
