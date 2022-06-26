@@ -23,19 +23,18 @@ function renderParticipants(userFilters, participants) {
 
 createWidget("topic-map-show-links", {
   tagName: "div.link-summary",
-  if (attrs.topicLinkLength > 0) {
-    html() {
-      return h(
-        "span",
-        this.attach("button", {
-          title: "topic_map.links_shown",
-          icon: "chevron-down",
-          action: "showLinks",
-          className: "btn",
-        })
-      );
-    },
+  html() {
+    return h(
+      "span",
+      this.attach("button", {
+        title: "topic_map.links_shown",
+        icon: "chevron-down",
+        action: "showLinks",
+        className: "btn",
+      })
+    );
   },
+
   showLinks() {
     this.sendWidgetAction("showAllLinks");
   },
