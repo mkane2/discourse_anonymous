@@ -56,7 +56,8 @@ createWidget("pm-remove-link", {
 
     bootbox.confirm(
       I18n.t(`private_message_info.${messageKey}`, {
-        name: this.attrs.user.username,
+        // name: this.attrs.user.username,
+        name: "nonnie",
       }),
       (confirmed) => {
         if (confirmed) {
