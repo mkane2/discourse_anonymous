@@ -78,24 +78,26 @@ createWidget("pm-map-user", {
     let link;
 
     if (this.site && this.site.mobileView) {
-      // const avatar = avatarImg("tiny", {
-      //   template: user.avatar_template,
-      //   username: user.username,
-      // });
-      // link = h("a", { attributes: { href: user.get("path") } }, [
-      //   avatar,
-      //   username,
-      // ]);
+      const avatar = avatarImg("tiny", {
+        template: user.avatar_template,
+        // username: user.username,
+        username: "nonnie",
+      });
+      link = h("a", { attributes: { href: user.get("path") } }, [
+        avatar,
+        username,
+      ]);
     } else {
       const avatar = avatarFor("tiny", {
         // template: user.avatar_template,
         // username: user.username,
+        username: "nonnie",
       });
 
       link = h(
-        // "a",
+        "span",
         // { attributes: { class: "user-link", href: user.get("path") } },
-        // [avatar, username]
+        [avatar, username]
       );
     }
 
