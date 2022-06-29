@@ -18,7 +18,8 @@ const rule = {
 
     if (quoteInfo) {
       let split = quoteInfo.split(/\,\s*/);
-      username = split[0];
+      // username = split[0];
+      username = "nonnie";
 
       let i;
       for (i = 1; i < split.length; i++) {
