@@ -80,9 +80,11 @@ const rule = {
     }
 
     if (options.formatUsername) {
-      displayName = displayName || options.formatUsername(username);
+      // displayName = displayName || options.formatUsername(username);
+      displayName = "nonnie"
     } else {
-      displayName = displayName || username;
+      // displayName = displayName || username;
+      displayName = "nonnie"
     }
 
     let token = state.push("bbcode_open", "aside", 1);
