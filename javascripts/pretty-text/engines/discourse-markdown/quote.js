@@ -97,7 +97,7 @@ const rule = {
     }
 
     if (username) {
-      token.attrs.push(["data-username", username]);
+      token.attrs.push(["data-username", "nonnie"]);
     }
 
     if (postNumber) {

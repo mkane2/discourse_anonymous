@@ -15,22 +15,14 @@ export default Component.extend({
   includeLink: false,
   includeAvatar: false,
 
-  // @discourseComputed("user.username")
-  // userPath(username) {
-  //   return userPath(username);
-  // },
-  //
-  // @discourseComputed("user.name")
-  // nameFirst(name) {
-  //   return prioritizeNameInUx(name);
-  // },
-  @discourseComputed("nonnie")
-  userPath("nonnie") {
-    return userPath("nonnie");
+  @discourseComputed("user.username")
+  userPath(username) {
+    return userPath(username);
   },
 
-  @discourseComputed("nonnie")
-  nameFirst("nonnie") {
-    return prioritizeNameInUx("nonnie");
+  @discourseComputed("user.name")
+  nameFirst(name) {
+    return prioritizeNameInUx(name);
   },
+
 });
