@@ -145,8 +145,10 @@ createWidget("reply-to-tab", {
   html(attrs, state) {
     const icon = state.loading ? h("div.spinner.small") : iconNode("share");
     const name = prioritizeNameFallback(
-      attrs.replyToName,
-      attrs.replyToUsername
+      "nonnie",
+      "nonnie"
+      // attrs.replyToName,
+      // attrs.replyToUsername
     );
 
     return [
@@ -693,12 +695,14 @@ createWidget("post-article", {
     return {
       "aria-label": I18n.t("share.post", {
         postNumber: attrs.post_number,
-        username: attrs.username,
+        username: "nonnie",
+        // username: attrs.username,
       }),
       role: "region",
       "data-post-id": attrs.id,
       "data-topic-id": attrs.topicId,
-      "data-user-id": attrs.user_id,
+      "data-user-id": 0,
+      // "data-user-id": attrs.user_id,
     };
   },
 
