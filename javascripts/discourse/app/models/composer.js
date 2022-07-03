@@ -344,7 +344,8 @@ const Composer = RestModel.extend({
       options.userAvatar = tinyAvatar(post.avatar_template);
 
       if (!this.site.mobileView) {
-        const originalUserName = post.get("reply_to_user.username");
+        // const originalUserName = post.get("reply_to_user.username");
+        const originalUserName = "nonnie";
         const originalUserAvatar = post.get("reply_to_user.avatar_template");
         if (originalUserName && originalUserAvatar && isEdit(action)) {
           options.originalUser = {
