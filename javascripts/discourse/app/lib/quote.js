@@ -38,7 +38,8 @@ export function buildQuote(post, contents, opts = {}) {
     name
   ) {
     // params.push(`username:${opts.username || post.username}`);
-    params.push(`username:${name}`);
+    // params.push(`username:${name}`);
+    params.push(`username:nonnie`);
   }
 
   return `[quote="${params.join(", ")}"]\n${contents.trim()}\n[/quote]\n\n`;
