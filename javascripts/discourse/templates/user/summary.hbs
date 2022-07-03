@@ -52,7 +52,7 @@
       </div>
     {{/if}}
 
-    {{#if currentUser == user}}
+    {{#if currentUser.username_lower == model.username_lower}}
     <div class="top-section">
       {{#user-summary-section title="top_replies" class="replies-section pull-left"}}
         {{#user-summary-topics-list type="replies" items=model.replies user=user as |reply|}}
@@ -126,7 +126,7 @@
       </div>
     {{/if}}
 
-    {{#if currentUser == user}}
+    {{#if currentUser.username_lower == model.username_lower}}
     {{#if model.top_categories.length}}
       <div class="top-section top-categories-section">
         {{#user-summary-section title="top_categories" class="summary-category-list pull-left"}}
